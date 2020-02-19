@@ -26,7 +26,7 @@ if (!isNaN(lanciaDadi)) {
 var chiediMail = prompt('Inserisci qui la tua mail');
 
 var listaMail = ['tony@stark.us', 'hulk@banner.us', 'steve@rogers.us', 'thor@thunder.us', 'vedova@nera.us']
-var ironman = 'tony@stark.us';
+
 var mailCorretta = false;
 
 for (var i = 0; i < listaMail.length; i++) {
@@ -39,7 +39,7 @@ for (var i = 0; i < listaMail.length; i++) {
 
  if (mailCorretta == true){
     console.log('Mail accettata, puoi accedere!');
-    document.getElementById('tonystark').innerHTML = ironman;
+    document.getElementById('invito').innerHTML = 'Sei ufficialmente invitato al party di fine anno';
 
 }
 else {
