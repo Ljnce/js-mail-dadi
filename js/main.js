@@ -6,7 +6,7 @@ console.log(lanciaDadi);
 if (!isNaN(lanciaDadi)) {
 
 
-    if ( (lanciaDadi > 0) && ( lanciaDadi <= 5)){
+    if ( (lanciaDadi >= 0) && ( lanciaDadi <= 5)){
         document.getElementById('haiperso').innerHTML = 'Hai perso, è uscito: ' + lanciaDadi + '! 😞';
     } else if((lanciaDadi > 5) && (lanciaDadi <= 10)){
         document.getElementById('haivinto').innerHTML = 'Hai vinto, è uscito: ' + lanciaDadi + '! 😃';
@@ -44,5 +44,5 @@ for (var i = 0; i < listaMail.length; i++) {
 }
 else {
     console.log('Mail declinata, non puoi accedere');
-    document.getElementById('')
+    document.getElementById('declinato').innerHTML = 'Non sei stato invitato';
 }
